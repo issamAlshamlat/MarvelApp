@@ -1,6 +1,6 @@
 //
 //  MarvelViewController.swift
-//  TottersTest
+//  MarvelApp
 //
 //  Created by Mhd Baher on 16/09/2022.
 //
