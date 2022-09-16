@@ -7,6 +7,7 @@
 
 import Foundation
 import CryptoKit
+import Alamofire
 
 extension String {
     
@@ -23,5 +24,6 @@ extension String {
         
         return urlString
     }
+    
 
 }

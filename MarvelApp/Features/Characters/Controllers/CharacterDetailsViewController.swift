@@ -11,6 +11,7 @@ import Reachability
 class CharacterDetailsViewController: MarvelViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    var characterID: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()

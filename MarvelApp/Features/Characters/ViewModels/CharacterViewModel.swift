@@ -75,8 +75,8 @@ class CharacterViewModel {
         var imageData = Data()
         
         if let imageURL = URL(string: imageURLString) {
-            DispatchQueue.main.async {
-                if let data = try? Data(contentsOf: imageURL) {
+            imageURL.getData { data, response, error in
+                if let data = data {
                     imageData = data
                 }
             }

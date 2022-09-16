@@ -11,7 +11,8 @@ import Reachability
 class MarvelViewController: UIViewController {
 
     lazy var activityIndicator = UIActivityIndicatorView(style: .medium)
-                                               
+    var storageProvider = StorageProvider.shared
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
