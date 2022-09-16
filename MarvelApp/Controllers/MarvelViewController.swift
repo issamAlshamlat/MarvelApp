@@ -2,7 +2,7 @@
 //  MarvelViewController.swift
 //  MarvelApp
 //
-//  Created by Mhd Baher on 16/09/2022.
+//  Created by Issam Abo Alshamlat on 16/09/2022.
 //
 
 import UIKit

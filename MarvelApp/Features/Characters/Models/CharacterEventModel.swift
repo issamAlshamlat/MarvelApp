@@ -1,8 +1,8 @@
 //
 //  CharacterEventModel.swift
-//  TottersTest
+//  MarvelApp
 //
-//  Created by Mhd Baher on 15/09/2022.
+//  Created by Issam Abo Alshamlat on 15/09/2022.
 //
 
 import Foundation

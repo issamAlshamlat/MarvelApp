@@ -1,8 +1,8 @@
 //
 //  Connectivity.swift
-//  TottersTest
+//  MarvelApp
 //
-//  Created by Mhd Baher on 14/09/2022.
+//  Created by Issam Abo Alshamlat on 14/09/2022.
 //
 
 import Foundation
