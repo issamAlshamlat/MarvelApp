@@ -49,7 +49,15 @@ class CharacterListViewModel {
                 
                 self?.characters.forEach {
                     let characterInDB = StorageProvider.shared.getCharacterByID(id: $0.character.id)
-                    characterInDB?.image = $0.imageData
+                    
+                    if let imageURL = URL(string: $0.imageURLString) {
+                        DispatchQueue.global().async {
+                            if let data = try? Data(contentsOf: imageURL) {
+                                characterInDB?.image = data
+                            }
+                        }
+                    }
+                    
                     try! StorageProvider.shared.saveData()
                 }
             }else {
@@ -69,21 +77,6 @@ class CharacterViewModel {
     var imageURLString: String {
         let url = ""
         return url.generateImageURLString(path: character.thumbnail.path, extension: character.thumbnail.extension)
-    }
-    
-    var imageData: Data {
-        var imageData = Data()
-        
-        if let imageURL = URL(string: imageURLString) {
-            imageURL.getData { data, response, error in
-                if let data = data {
-                    imageData = data
-                }
-            }
-        }
-        
-        return imageData
-
     }
     
     var isFavourite: Bool {

@@ -10,8 +10,8 @@ import Alamofire
 
 extension URL {
     
-    func getData(completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
-        URLSession.shared.dataTask(with: self, completionHandler: completion).resume()
-    }
+//    func getData() async {
+//        URLSession.shared.dataTask(with: self, completionHandler: completion).resume()
+//    }
 
 }
