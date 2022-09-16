@@ -49,7 +49,7 @@ class CharacterListViewModel {
                 
                 self?.characters.forEach {
                     let characterInDB = StorageProvider.shared.getCharacterByID(id: $0.character.id)
-                    characterInDB?.thumbnail = $0.imageData
+                    characterInDB?.image = $0.imageData
                     try! StorageProvider.shared.saveData()
                 }
             }else {
