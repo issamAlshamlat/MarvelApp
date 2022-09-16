@@ -241,7 +241,7 @@ open class Request {
 extension Request: CustomStringConvertible {
     /// The textual representation used when written to an output stream, which includes the HTTP method and URL, as
     /// well as the response status code if a response has been received.
-    open var description: String {
+    public var description: String {
         var components: [String] = []
 
         if let HTTPMethod = request?.httpMethod {
@@ -264,7 +264,7 @@ extension Request: CustomStringConvertible {
 
 extension Request: CustomDebugStringConvertible {
     /// The textual representation used when written to an output stream, in the form of a cURL command.
-    open var debugDescription: String {
+    public var debugDescription: String {
         return cURLRepresentation()
     }
 

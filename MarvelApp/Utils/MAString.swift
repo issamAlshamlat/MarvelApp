@@ -9,5 +9,9 @@ import Foundation
 import UIKit
 
 extension String {
-
+    
+    //MARK: - TabBarController
+    static let tab_bar_home_button_title = "Home"
+    static let tab_bar_favourites_button_title = "Favourites"
+    
 }

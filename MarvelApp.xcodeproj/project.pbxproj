@@ -14,9 +14,6 @@
 		E70F6CE028D4EBE100C01F9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E70F6CDF28D4EBE100C01F9F /* Assets.xcassets */; };
 		E70F6CE328D4EBE100C01F9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E70F6CE128D4EBE100C01F9F /* LaunchScreen.storyboard */; };
 		E7A8D22628D4EFE900842EB3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D22528D4EFE900842EB3 /* Constants.swift */; };
-		E7A8D22828D4F00300842EB3 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D22728D4F00300842EB3 /* ReachabilityManager.swift */; };
-		E7A8D22C28D4F00A00842EB3 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D22928D4F00900842EB3 /* Connectivity.swift */; };
-		E7A8D22D28D4F00A00842EB3 /* MAImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D22A28D4F00900842EB3 /* MAImages.swift */; };
 		E7A8D22E28D4F00A00842EB3 /* MAString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D22B28D4F00900842EB3 /* MAString.swift */; };
 		E7A8D24228D4F0AE00842EB3 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7A8D23028D4F0AD00842EB3 /* Montserrat-Thin.ttf */; };
 		E7A8D24328D4F0AE00842EB3 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7A8D23128D4F0AD00842EB3 /* Montserrat-Italic.ttf */; };
@@ -36,6 +33,10 @@
 		E7A8D25128D4F0AE00842EB3 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7A8D23F28D4F0AE00842EB3 /* Montserrat-ExtraBold.ttf */; };
 		E7A8D25228D4F0AE00842EB3 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7A8D24028D4F0AE00842EB3 /* Montserrat-Regular.ttf */; };
 		E7A8D25328D4F0AE00842EB3 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7A8D24128D4F0AE00842EB3 /* Montserrat-Medium.ttf */; };
+		E7A8D25C28D4F51300842EB3 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D25828D4F51300842EB3 /* String+Extension.swift */; };
+		E7A8D25D28D4F51300842EB3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D25928D4F51300842EB3 /* UIColor+Extension.swift */; };
+		E7A8D25E28D4F51300842EB3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D25A28D4F51300842EB3 /* UIView+Extension.swift */; };
+		E7A8D25F28D4F51300842EB3 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D25B28D4F51300842EB3 /* UIFont+Extension.swift */; };
 		E97308450D0A5F3BDFB1D0EA /* Pods_MarvelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125663DB05035D9E9A3C9D4F /* Pods_MarvelApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,9 +53,6 @@
 		E70F6CE228D4EBE100C01F9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E70F6CE428D4EBE100C01F9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7A8D22528D4EFE900842EB3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		E7A8D22728D4F00300842EB3 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
-		E7A8D22928D4F00900842EB3 /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
-		E7A8D22A28D4F00900842EB3 /* MAImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAImages.swift; sourceTree = "<group>"; };
 		E7A8D22B28D4F00900842EB3 /* MAString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAString.swift; sourceTree = "<group>"; };
 		E7A8D23028D4F0AD00842EB3 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
 		E7A8D23128D4F0AD00842EB3 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
@@ -74,6 +72,10 @@
 		E7A8D23F28D4F0AE00842EB3 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
 		E7A8D24028D4F0AE00842EB3 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		E7A8D24128D4F0AE00842EB3 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		E7A8D25828D4F51300842EB3 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		E7A8D25928D4F51300842EB3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E7A8D25A28D4F51300842EB3 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E7A8D25B28D4F51300842EB3 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,17 +148,9 @@
 			path = Features;
 			sourceTree = "<group>";
 		};
-		E7A8D21428D4EE9600842EB3 /* TabBarController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TabBarController;
-			sourceTree = "<group>";
-		};
 		E7A8D21528D4EEAC00842EB3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E7A8D21428D4EE9600842EB3 /* TabBarController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -242,6 +236,10 @@
 		E7A8D22028D4EF4800842EB3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E7A8D25828D4F51300842EB3 /* String+Extension.swift */,
+				E7A8D25928D4F51300842EB3 /* UIColor+Extension.swift */,
+				E7A8D25B28D4F51300842EB3 /* UIFont+Extension.swift */,
+				E7A8D25A28D4F51300842EB3 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -250,9 +248,6 @@
 			isa = PBXGroup;
 			children = (
 				E7A8D22528D4EFE900842EB3 /* Constants.swift */,
-				E7A8D22728D4F00300842EB3 /* ReachabilityManager.swift */,
-				E7A8D22928D4F00900842EB3 /* Connectivity.swift */,
-				E7A8D22A28D4F00900842EB3 /* MAImages.swift */,
 				E7A8D22B28D4F00900842EB3 /* MAString.swift */,
 			);
 			path = Utils;
@@ -447,12 +442,13 @@
 			files = (
 				E70F6CD428D4EBDF00C01F9F /* AppDelegate.swift in Sources */,
 				E70F6CDE28D4EBDF00C01F9F /* MarvelApp.xcdatamodeld in Sources */,
-				E7A8D22C28D4F00A00842EB3 /* Connectivity.swift in Sources */,
+				E7A8D25D28D4F51300842EB3 /* UIColor+Extension.swift in Sources */,
 				E70F6CD628D4EBDF00C01F9F /* SceneDelegate.swift in Sources */,
 				E7A8D22628D4EFE900842EB3 /* Constants.swift in Sources */,
-				E7A8D22828D4F00300842EB3 /* ReachabilityManager.swift in Sources */,
+				E7A8D25E28D4F51300842EB3 /* UIView+Extension.swift in Sources */,
 				E7A8D22E28D4F00A00842EB3 /* MAString.swift in Sources */,
-				E7A8D22D28D4F00A00842EB3 /* MAImages.swift in Sources */,
+				E7A8D25F28D4F51300842EB3 /* UIFont+Extension.swift in Sources */,
+				E7A8D25C28D4F51300842EB3 /* String+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,11 +600,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MarvelApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -634,11 +630,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MarvelApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
