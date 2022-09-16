@@ -12,7 +12,7 @@
         <!--Marvel Tab Bar Controller-->
         <scene sceneID="XYo-X3-EYX">
             <objects>
-                <tabBarController storyboardIdentifier="MarvelTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="fKq-5J-mA7" customClass="MarvelTabBarController" customModule="TottersTest" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MarvelTabBarController" id="fKq-5J-mA7" customClass="MarvelTabBarController" customModule="MarvelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qGS-bE-kOy">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -20,8 +20,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="eBO-PI-gaI" kind="relationship" relationship="viewControllers" id="PAg-9V-0i6"/>
-                        <segue destination="uIJ-E4-8Sh" kind="relationship" relationship="viewControllers" id="fFc-hZ-QVU"/>
+                        <segue destination="Ox6-xR-gxD" kind="relationship" relationship="viewControllers" id="deR-6B-4GK"/>
+                        <segue destination="uIJ-E4-8Sh" kind="relationship" relationship="viewControllers" id="VSB-dn-kTx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPI-Eh-gys" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -31,18 +31,18 @@
         <!--Character List View Controller-->
         <scene sceneID="arn-WY-VkZ">
             <objects>
-                <viewController id="5f8-f2-AP8" customClass="CharacterListViewController" customModule="TottersTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5f8-f2-AP8" customClass="CharacterListViewController" customModule="MarvelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L9F-4Y-H8r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="i0C-55-1iA">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="i0C-55-1iA">
                                 <rect key="frame" x="0.0" y="92" width="414" height="721"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Yl-8z-cYP"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="i0C-55-1iA" firstAttribute="top" secondItem="0Yl-8z-cYP" secondAttribute="top" id="4ei-Sa-Swk"/>
                             <constraint firstItem="i0C-55-1iA" firstAttribute="leading" secondItem="0Yl-8z-cYP" secondAttribute="leading" id="C3x-fB-KEJ"/>
@@ -53,7 +53,6 @@
                     <navigationItem key="navigationItem" id="Lhf-OI-Bo8"/>
                     <connections>
                         <outlet property="tableView" destination="i0C-55-1iA" id="uPI-Bu-AGr"/>
-                        <segue destination="DUV-YL-bSf" kind="show" id="zle-9h-kCO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WLa-7j-UkF" sceneMemberID="firstResponder"/>
@@ -63,18 +62,18 @@
         <!--Character Details View Controller-->
         <scene sceneID="HAY-9J-P0c">
             <objects>
-                <viewController storyboardIdentifier="CharacterDetailsViewController" id="DUV-YL-bSf" customClass="CharacterDetailsViewController" customModule="TottersTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CharacterDetailsViewController" id="DUV-YL-bSf" customClass="CharacterDetailsViewController" customModule="MarvelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZwN-vJ-vhf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zMi-Lb-QhQ">
-                                <rect key="frame" x="0.0" y="92" width="414" height="721"/>
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8L7-Fl-7Gz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="8L7-Fl-7Gz" firstAttribute="trailing" secondItem="zMi-Lb-QhQ" secondAttribute="trailing" id="9d2-hI-C2q"/>
                             <constraint firstItem="8L7-Fl-7Gz" firstAttribute="bottom" secondItem="zMi-Lb-QhQ" secondAttribute="bottom" id="K7U-Ui-JTj"/>
@@ -91,31 +90,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ifh-My-zJF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2201" y="86"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="lPb-M4-x7k">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eBO-PI-gaI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="d1K-pG-X4A"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rJW-UU-yPd">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="5f8-f2-AP8" kind="relationship" relationship="rootViewController" id="lPp-qG-m13"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fJ8-ry-DQ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="732" y="86"/>
+            <point key="canvasLocation" x="2235" y="86"/>
         </scene>
         <!--Favourites View Controller-->
         <scene sceneID="f70-96-dyg">
             <objects>
-                <viewController id="Cbl-De-AEp" customClass="FavouritesViewController" customModule="TottersTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Cbl-De-AEp" customClass="FavouritesViewController" customModule="MarvelApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1qF-2k-RzO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,6 +142,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jpz-xz-D90" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="732" y="739"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="INu-Qu-G5P">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ox6-xR-gxD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="RFl-xg-xqU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cdy-9j-oXO">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0H7-Mg-y4x">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="5f8-f2-AP8" kind="relationship" relationship="rootViewController" id="qXj-8p-XDa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvc-59-qy4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="732" y="86"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.88235294119999996" green="0.32156862749999998" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

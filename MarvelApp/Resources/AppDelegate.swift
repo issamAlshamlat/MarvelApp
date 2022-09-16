@@ -10,6 +10,7 @@ import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
     
     lazy var coreDataStack: CoreDataStack = .init(modelName: "Characters")
     

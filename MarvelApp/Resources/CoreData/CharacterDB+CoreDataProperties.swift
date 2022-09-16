@@ -21,10 +21,10 @@ extension CharacterDB {
     @NSManaged public var is_favourite: Bool
     @NSManaged public var name: String?
     @NSManaged public var image: Data?
-    @NSManaged public var comics: NSSet?
-    @NSManaged public var events: NSSet?
-    @NSManaged public var series: NSSet?
-    @NSManaged public var stories: NSSet?
+    @NSManaged public var comics: Set<ComicDB>?
+    @NSManaged public var events: Set<EventDB>?
+    @NSManaged public var series: Set<SerieDB>?
+    @NSManaged public var stories: Set<StoryDB>?
 
 }
 

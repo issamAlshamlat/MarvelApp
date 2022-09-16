@@ -41,7 +41,15 @@ class CharacterSerieListViewModel {
                 
                 self?.series.forEach {
                     let characterInDB = StorageProvider.shared.getEventByID(id: $0.serie.id)
-                    characterInDB?.image = $0.imageData
+                    
+                    if let imageURL = URL(string: $0.imageURLString) {
+                        DispatchQueue.global().async {
+                            if let data = try? Data(contentsOf: imageURL) {
+                                characterInDB?.image = data
+                            }
+                        }
+                    }
+                    
                     try! StorageProvider.shared.saveData()
                 }
                 
@@ -69,19 +77,6 @@ class SerieViewModel {
         }
         
         return url
-
-    }
-    
-    var imageData: Data {
-        var imageData = Data()
-        
-        if let imageURL = URL(string: imageURLString) {
-            if let data = try? Data(contentsOf: imageURL) {
-                imageData = data
-            }
-        }
-        
-        return imageData
 
     }
 }

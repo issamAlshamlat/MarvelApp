@@ -61,7 +61,8 @@ class CharacterListViewController: MarvelViewController {
     private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-
+        tableView.tableHeaderView = UIView()
+        
         tableView.register(UINib(nibName: "CharacterItemTableViewCell", bundle: nil), forCellReuseIdentifier: "CharacterItemTableViewCell")
     }
 
@@ -115,7 +116,7 @@ extension CharacterListViewController: UITableViewDelegate, UITableViewDataSourc
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        return 250
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

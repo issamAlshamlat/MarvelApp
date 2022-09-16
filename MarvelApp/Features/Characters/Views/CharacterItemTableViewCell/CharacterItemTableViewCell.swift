@@ -19,6 +19,7 @@ class CharacterItemTableViewCell: UITableViewCell {
     @IBOutlet weak var characterNameLabel: UILabel!
     @IBOutlet weak var characterDescriptionLabel: UILabel!
     @IBOutlet weak var favouriteImageView: UIImageView!
+    @IBOutlet weak var characterIDLabel: UILabel!
     
     private var characterID: Int?
     var delegate: NotifyTableViewOnChangeProtocol?
@@ -43,6 +44,9 @@ class CharacterItemTableViewCell: UITableViewCell {
         characterDescriptionLabel.font = .maMediumFont
         characterDescriptionLabel.textColor = .gray
         
+        characterIDLabel.font = .maSemiBoldFont
+        characterIDLabel.textColor = .darkGray
+        
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(toggleFavouriteTapped(_:)))
         favouriteImageView.addGestureRecognizer(tapGestureRecognizer)
     }
@@ -50,17 +54,11 @@ class CharacterItemTableViewCell: UITableViewCell {
     public func populate(vm: CharacterViewModel) {
         characterID = vm.character.id
         
+        characterIDLabel.text = "# " + "\(vm.character.id)"
         characterNameLabel.text = vm.character.name
         characterDescriptionLabel.text = vm.character.description
         
         self.characterImageView.sd_setImage(with: URL(string: vm.imageURLString))
-//        { image,_,_,_  in
-//            if let image = image {
-//                let characterInDB = StorageProvider.shared.getCharacterByID(id: self.characterID ?? 0)
-//                characterInDB?.thumbnail = image.pngData()
-//                try! StorageProvider.shared.saveData()
-//            }
-//        }
 
         favouriteImageView.image = StorageProvider.shared.isCharacterFavorite(id: vm.character.id) ? .liked : .unliked
     }
@@ -68,6 +66,7 @@ class CharacterItemTableViewCell: UITableViewCell {
     public func populateFromDataBase(vm: CharacterDB) {
         characterID = Int(vm.id)
         
+        characterIDLabel.text = "# " + "\(vm.id)"
         characterNameLabel.text = vm.name ?? ""
         characterDescriptionLabel.text = vm.desc
         

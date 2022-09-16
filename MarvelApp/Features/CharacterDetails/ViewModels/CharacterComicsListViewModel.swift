@@ -38,10 +38,19 @@ class CharacterComicsListViewModel {
             if let comicListViewModel = comicListViewModel {
                 self?.comics = comicListViewModel
                 self?.storageProvider.updateCharacterComics(characterID: id, comics: comicListViewModel)
+                
                 self?.comics.forEach {
                     if let id = $0.comic.id {
                         let characterInDB = StorageProvider.shared.getComicByID(id: id)
-                        characterInDB?.image = $0.imageData
+                        
+                        if let imageURL = URL(string: $0.imageURLString) {
+                            DispatchQueue.global().async {
+                                if let data = try? Data(contentsOf: imageURL) {
+                                    characterInDB?.image = data
+                                }
+                            }
+                        }
+                        
                         try! StorageProvider.shared.saveData()
                     }
                 }
@@ -63,25 +72,6 @@ class ComicViewModel {
     }
     
     var imageURLString: String {
-        var url = ""
-        
-//        if let thumbnail = comic.thumbnail {
-            url = url.generateImageURLString(path: comic.thumbnail.path, extension: comic.thumbnail.extension)
-//        }
-        
-        return url
-    }
-    
-    var imageData: Data {
-        var imageData = Data()
-        
-        if let imageURL = URL(string: imageURLString) {
-            if let data = try? Data(contentsOf: imageURL) {
-                imageData = data
-            }
-        }
-        
-        return imageData
-
+        return String().generateImageURLString(path: comic.thumbnail.path, extension: comic.thumbnail.extension)
     }
 }

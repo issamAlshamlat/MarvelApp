@@ -25,4 +25,43 @@ extension UIView {
         self.layer.shadowOpacity = 0.3
         self.layer.shadowRadius = 3.0
     }
+    
+    func addRoundedCornerFor(corners: UIRectCorner, value: Int) {
+        let path = UIBezierPath(roundedRect:self.bounds,
+                                byRoundingCorners:corners,
+                                cornerRadii: CGSize(width: value, height:  value))
+
+        let maskLayer = CAShapeLayer()
+
+        maskLayer.path = path.cgPath
+        self.layer.mask = maskLayer
+    }
+    
+    func addBorders(withEdges edges: [UIRectEdge],
+                     withColor color: UIColor,
+                     withThickness thickness: CGFloat,
+                     cornerRadius: CGFloat) {
+       layer.borderColor = color.cgColor
+       layer.borderWidth = thickness
+       layer.cornerRadius = cornerRadius
+       edges.forEach({ edge in
+         
+         switch edge {
+           case .left:
+             layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+             
+           case .right:
+             layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
+             
+           case .top:
+             layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+             
+           case .bottom:
+             layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+             
+           default:
+             break
+         }
+       })
+     }
 }
