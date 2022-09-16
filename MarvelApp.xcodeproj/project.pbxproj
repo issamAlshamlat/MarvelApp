@@ -73,7 +73,6 @@
 		E7A8D2E428D50C2200842EB3 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D2E328D50C2200842EB3 /* CoreDataStack.swift */; };
 		E7A8D2E828D50CF900842EB3 /* CharacterItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D2E628D50CF900842EB3 /* CharacterItemTableViewCell.swift */; };
 		E7A8D2E928D50CF900842EB3 /* CharacterItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A8D2E728D50CF900842EB3 /* CharacterItemTableViewCell.xib */; };
-		E7A8D2EB28D50E8E00842EB3 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D2EA28D50E8E00842EB3 /* URL+Extension.swift */; };
 		E97308450D0A5F3BDFB1D0EA /* Pods_MarvelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125663DB05035D9E9A3C9D4F /* Pods_MarvelApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -149,7 +148,6 @@
 		E7A8D2E328D50C2200842EB3 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		E7A8D2E628D50CF900842EB3 /* CharacterItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterItemTableViewCell.swift; sourceTree = "<group>"; };
 		E7A8D2E728D50CF900842EB3 /* CharacterItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CharacterItemTableViewCell.xib; sourceTree = "<group>"; };
-		E7A8D2EA28D50E8E00842EB3 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,7 +328,6 @@
 				E7A8D25928D4F51300842EB3 /* UIColor+Extension.swift */,
 				E7A8D25B28D4F51300842EB3 /* UIFont+Extension.swift */,
 				E7A8D25A28D4F51300842EB3 /* UIView+Extension.swift */,
-				E7A8D2EA28D50E8E00842EB3 /* URL+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -594,7 +591,6 @@
 				E7A8D2DD28D50B3E00842EB3 /* CharacterDB+CoreDataProperties.swift in Sources */,
 				E7A8D29A28D5042E00842EB3 /* Character.swift in Sources */,
 				E7A8D29C28D5042E00842EB3 /* CharacterSerieModel.swift in Sources */,
-				E7A8D2EB28D50E8E00842EB3 /* URL+Extension.swift in Sources */,
 				E7A8D28528D500A700842EB3 /* CharacterListViewController.swift in Sources */,
 				E7A8D22628D4EFE900842EB3 /* Constants.swift in Sources */,
 				E7A8D25E28D4F51300842EB3 /* UIView+Extension.swift in Sources */,
