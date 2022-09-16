@@ -37,6 +37,13 @@
 		E7A8D25D28D4F51300842EB3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D25928D4F51300842EB3 /* UIColor+Extension.swift */; };
 		E7A8D25E28D4F51300842EB3 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D25A28D4F51300842EB3 /* UIView+Extension.swift */; };
 		E7A8D25F28D4F51300842EB3 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D25B28D4F51300842EB3 /* UIFont+Extension.swift */; };
+		E7A8D27E28D4FF3200842EB3 /* MarvelTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D27D28D4FF3200842EB3 /* MarvelTabBarController.swift */; };
+		E7A8D28028D4FF8700842EB3 /* MAImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D27F28D4FF8700842EB3 /* MAImages.swift */; };
+		E7A8D28228D5009100842EB3 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A8D28128D5009100842EB3 /* TabBar.storyboard */; };
+		E7A8D28528D500A700842EB3 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D28328D500A700842EB3 /* CharacterListViewController.swift */; };
+		E7A8D28628D500A700842EB3 /* CharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D28428D500A700842EB3 /* CharacterDetailsViewController.swift */; };
+		E7A8D28828D500B800842EB3 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D28728D500B800842EB3 /* FavouritesViewController.swift */; };
+		E7A8D28A28D5010800842EB3 /* MarvelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D28928D5010800842EB3 /* MarvelViewController.swift */; };
 		E97308450D0A5F3BDFB1D0EA /* Pods_MarvelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125663DB05035D9E9A3C9D4F /* Pods_MarvelApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +83,13 @@
 		E7A8D25928D4F51300842EB3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		E7A8D25A28D4F51300842EB3 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E7A8D25B28D4F51300842EB3 /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		E7A8D27D28D4FF3200842EB3 /* MarvelTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelTabBarController.swift; sourceTree = "<group>"; };
+		E7A8D27F28D4FF8700842EB3 /* MAImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAImages.swift; sourceTree = "<group>"; };
+		E7A8D28128D5009100842EB3 /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		E7A8D28328D500A700842EB3 /* CharacterListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
+		E7A8D28428D500A700842EB3 /* CharacterDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewController.swift; sourceTree = "<group>"; };
+		E7A8D28728D500B800842EB3 /* FavouritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		E7A8D28928D5010800842EB3 /* MarvelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +165,8 @@
 		E7A8D21528D4EEAC00842EB3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E7A8D28928D5010800842EB3 /* MarvelViewController.swift */,
+				E7A8D27A28D4FF1F00842EB3 /* TabBarController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,6 +196,8 @@
 		E7A8D21828D4EED800842EB3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E7A8D28428D500A700842EB3 /* CharacterDetailsViewController.swift */,
+				E7A8D28328D500A700842EB3 /* CharacterListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -208,6 +226,7 @@
 		E7A8D21C28D4EEF400842EB3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E7A8D28728D500B800842EB3 /* FavouritesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -249,6 +268,7 @@
 			children = (
 				E7A8D22528D4EFE900842EB3 /* Constants.swift */,
 				E7A8D22B28D4F00900842EB3 /* MAString.swift */,
+				E7A8D27F28D4FF8700842EB3 /* MAImages.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -305,6 +325,15 @@
 				E7A8D23528D4F0AD00842EB3 /* Montserrat-ThinItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E7A8D27A28D4FF1F00842EB3 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				E7A8D28128D5009100842EB3 /* TabBar.storyboard */,
+				E7A8D27D28D4FF3200842EB3 /* MarvelTabBarController.swift */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +408,7 @@
 				E70F6CE028D4EBE100C01F9F /* Assets.xcassets in Resources */,
 				E7A8D25328D4F0AE00842EB3 /* Montserrat-Medium.ttf in Resources */,
 				E7A8D24728D4F0AE00842EB3 /* Montserrat-ThinItalic.ttf in Resources */,
+				E7A8D28228D5009100842EB3 /* TabBar.storyboard in Resources */,
 				E7A8D24E28D4F0AE00842EB3 /* Montserrat-Black.ttf in Resources */,
 				E7A8D24228D4F0AE00842EB3 /* Montserrat-Thin.ttf in Resources */,
 				E70F6CDB28D4EBDF00C01F9F /* Main.storyboard in Resources */,
@@ -440,15 +470,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A8D28628D500A700842EB3 /* CharacterDetailsViewController.swift in Sources */,
 				E70F6CD428D4EBDF00C01F9F /* AppDelegate.swift in Sources */,
 				E70F6CDE28D4EBDF00C01F9F /* MarvelApp.xcdatamodeld in Sources */,
+				E7A8D28A28D5010800842EB3 /* MarvelViewController.swift in Sources */,
 				E7A8D25D28D4F51300842EB3 /* UIColor+Extension.swift in Sources */,
 				E70F6CD628D4EBDF00C01F9F /* SceneDelegate.swift in Sources */,
+				E7A8D28528D500A700842EB3 /* CharacterListViewController.swift in Sources */,
 				E7A8D22628D4EFE900842EB3 /* Constants.swift in Sources */,
 				E7A8D25E28D4F51300842EB3 /* UIView+Extension.swift in Sources */,
+				E7A8D27E28D4FF3200842EB3 /* MarvelTabBarController.swift in Sources */,
 				E7A8D22E28D4F00A00842EB3 /* MAString.swift in Sources */,
 				E7A8D25F28D4F51300842EB3 /* UIFont+Extension.swift in Sources */,
 				E7A8D25C28D4F51300842EB3 /* String+Extension.swift in Sources */,
+				E7A8D28828D500B800842EB3 /* FavouritesViewController.swift in Sources */,
+				E7A8D28028D4FF8700842EB3 /* MAImages.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
