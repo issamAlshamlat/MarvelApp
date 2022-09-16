@@ -49,6 +49,11 @@
 		E7A8D29028D5022F00842EB3 /* BaseRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D28D28D5022F00842EB3 /* BaseRequestManager.swift */; };
 		E7A8D29328D5034300842EB3 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D29128D5034300842EB3 /* ReachabilityManager.swift */; };
 		E7A8D29428D5034300842EB3 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D29228D5034300842EB3 /* Connectivity.swift */; };
+		E7A8D29A28D5042E00842EB3 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D29528D5042E00842EB3 /* Character.swift */; };
+		E7A8D29B28D5042E00842EB3 /* CharacterEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D29628D5042E00842EB3 /* CharacterEventModel.swift */; };
+		E7A8D29C28D5042E00842EB3 /* CharacterSerieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D29728D5042E00842EB3 /* CharacterSerieModel.swift */; };
+		E7A8D29D28D5042E00842EB3 /* CharacterStoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D29828D5042E00842EB3 /* CharacterStoryModel.swift */; };
+		E7A8D29E28D5042E00842EB3 /* CharacterComicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8D29928D5042E00842EB3 /* CharacterComicModel.swift */; };
 		E97308450D0A5F3BDFB1D0EA /* Pods_MarvelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 125663DB05035D9E9A3C9D4F /* Pods_MarvelApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +105,11 @@
 		E7A8D28D28D5022F00842EB3 /* BaseRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequestManager.swift; sourceTree = "<group>"; };
 		E7A8D29128D5034300842EB3 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		E7A8D29228D5034300842EB3 /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		E7A8D29528D5042E00842EB3 /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		E7A8D29628D5042E00842EB3 /* CharacterEventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterEventModel.swift; sourceTree = "<group>"; };
+		E7A8D29728D5042E00842EB3 /* CharacterSerieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSerieModel.swift; sourceTree = "<group>"; };
+		E7A8D29828D5042E00842EB3 /* CharacterStoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterStoryModel.swift; sourceTree = "<group>"; };
+		E7A8D29928D5042E00842EB3 /* CharacterComicModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterComicModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +239,11 @@
 		E7A8D21B28D4EEEB00842EB3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E7A8D29528D5042E00842EB3 /* Character.swift */,
+				E7A8D29928D5042E00842EB3 /* CharacterComicModel.swift */,
+				E7A8D29628D5042E00842EB3 /* CharacterEventModel.swift */,
+				E7A8D29728D5042E00842EB3 /* CharacterSerieModel.swift */,
+				E7A8D29828D5042E00842EB3 /* CharacterStoryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -488,17 +503,22 @@
 				E7A8D28E28D5022F00842EB3 /* ApiManager.swift in Sources */,
 				E7A8D29328D5034300842EB3 /* ReachabilityManager.swift in Sources */,
 				E7A8D28628D500A700842EB3 /* CharacterDetailsViewController.swift in Sources */,
+				E7A8D29D28D5042E00842EB3 /* CharacterStoryModel.swift in Sources */,
 				E70F6CD428D4EBDF00C01F9F /* AppDelegate.swift in Sources */,
 				E70F6CDE28D4EBDF00C01F9F /* MarvelApp.xcdatamodeld in Sources */,
 				E7A8D28A28D5010800842EB3 /* MarvelViewController.swift in Sources */,
 				E7A8D25D28D4F51300842EB3 /* UIColor+Extension.swift in Sources */,
 				E7A8D29028D5022F00842EB3 /* BaseRequestManager.swift in Sources */,
+				E7A8D29B28D5042E00842EB3 /* CharacterEventModel.swift in Sources */,
 				E70F6CD628D4EBDF00C01F9F /* SceneDelegate.swift in Sources */,
+				E7A8D29A28D5042E00842EB3 /* Character.swift in Sources */,
+				E7A8D29C28D5042E00842EB3 /* CharacterSerieModel.swift in Sources */,
 				E7A8D28528D500A700842EB3 /* CharacterListViewController.swift in Sources */,
 				E7A8D22628D4EFE900842EB3 /* Constants.swift in Sources */,
 				E7A8D25E28D4F51300842EB3 /* UIView+Extension.swift in Sources */,
 				E7A8D29428D5034300842EB3 /* Connectivity.swift in Sources */,
 				E7A8D28F28D5022F00842EB3 /* EndPoints.swift in Sources */,
+				E7A8D29E28D5042E00842EB3 /* CharacterComicModel.swift in Sources */,
 				E7A8D27E28D4FF3200842EB3 /* MarvelTabBarController.swift in Sources */,
 				E7A8D22E28D4F00A00842EB3 /* MAString.swift in Sources */,
 				E7A8D25F28D4F51300842EB3 /* UIFont+Extension.swift in Sources */,

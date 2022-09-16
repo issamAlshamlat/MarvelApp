@@ -14,4 +14,7 @@ extension String {
     static let tab_bar_home_button_title = "Home"
     static let tab_bar_favourites_button_title = "Favourites"
     
+    //MARK: - CharacterListViewController
+    static let welcome_to_marvel_title_label = "Welcome To Marvel"
+    
 }
