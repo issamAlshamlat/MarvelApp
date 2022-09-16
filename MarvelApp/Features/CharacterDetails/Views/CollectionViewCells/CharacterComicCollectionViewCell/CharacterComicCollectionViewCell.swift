@@ -1,8 +1,8 @@
 //
 //  CharacterComicCollectionViewCell.swift
-//  TottersTest
+//  Marvel App
 //
-//  Created by Mhd Baher on 15/09/2022.
+//  Created by Issam Abo Alshamlat on 15/09/2022.
 //
 
 import UIKit
@@ -17,24 +17,14 @@ class CharacterComicCollectionViewCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        contentView.layer.cornerRadius = 10.0
-        contentView.layer.borderWidth = 0.5
-        contentView.layer.borderColor = UIColor.clear.cgColor
-        contentView.layer.masksToBounds = true
-
-        layer.shadowColor = UIColor.lightGray.cgColor
-        layer.shadowOffset = CGSize(width: 0, height: 0.0)
-        layer.shadowRadius = 1.0
-        layer.shadowOpacity = 1.0
-        layer.masksToBounds = false
-        layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: contentView.layer.cornerRadius).cgPath
-        layer.backgroundColor = UIColor.clear.cgColor
+        contentView.addShadow(layer: layer)
         
         detailsView.addRoundedCornerFor(corners: [.topLeft, .topRight, .bottomLeft, .bottomRight], value: 10)
 
     }
     
     private func setupUI() {
+        
         comicImageView.layer.cornerRadius = 10
         comicImageView.layer.masksToBounds = true
 

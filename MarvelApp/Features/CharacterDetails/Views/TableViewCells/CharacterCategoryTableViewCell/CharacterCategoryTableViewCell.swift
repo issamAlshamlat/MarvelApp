@@ -1,8 +1,8 @@
 //
 //  CharacterCategoryTableViewCell.swift
-//  TottersTest
+//  Marvel App
 //
-//  Created by Mhd Baher on 15/09/2022.
+//  Created by Issam Abo Alshamlat on 15/09/2022.
 //
 
 import UIKit
@@ -27,6 +27,8 @@ class CharacterCategoryTableViewCell: UITableViewCell {
     var characterID = Int()
     
     private func setupCollectionView() {
+        self.selectionStyle = .none
+        
         collectionView.delegate = self
         collectionView.dataSource = self
 

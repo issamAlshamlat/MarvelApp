@@ -1,8 +1,8 @@
 //
 //  CharacterItemTableViewCell.swift
-//  TottersTest
+//  Marvel App
 //
-//  Created by Mhd Baher on 14/09/2022.
+//  Created by Issam Abo Alshamlat on 14/09/2022.
 //
 
 import UIKit

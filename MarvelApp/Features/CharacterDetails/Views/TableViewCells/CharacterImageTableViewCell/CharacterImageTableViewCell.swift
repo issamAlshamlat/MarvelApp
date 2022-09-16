@@ -1,8 +1,8 @@
 //
 //  CharacterImageTableViewCell.swift
-//  TottersTest
+//  Marvel App
 //
-//  Created by Mhd Baher on 15/09/2022.
+//  Created by Issam Abo Alshamlat on 15/09/2022.
 //
 
 import UIKit
@@ -22,6 +22,8 @@ class CharacterImageTableViewCell: UITableViewCell {
     }
     
     private func setupUI() {
+        self.selectionStyle = .none
+        
         characterImageView.layer.cornerRadius = characterImageView.frame.height / 2
         characterImageView.layer.masksToBounds = true
         

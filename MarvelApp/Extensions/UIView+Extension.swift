@@ -38,30 +38,47 @@ extension UIView {
     }
     
     func addBorders(withEdges edges: [UIRectEdge],
-                     withColor color: UIColor,
-                     withThickness thickness: CGFloat,
-                     cornerRadius: CGFloat) {
-       layer.borderColor = color.cgColor
-       layer.borderWidth = thickness
-       layer.cornerRadius = cornerRadius
-       edges.forEach({ edge in
-         
-         switch edge {
-           case .left:
-             layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
-             
-           case .right:
-             layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
-             
-           case .top:
-             layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-             
-           case .bottom:
-             layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
-             
-           default:
-             break
-         }
-       })
-     }
+                    withColor color: UIColor,
+                    withThickness thickness: CGFloat,
+                    cornerRadius: CGFloat) {
+        layer.borderColor = color.cgColor
+        layer.borderWidth = thickness
+        layer.cornerRadius = cornerRadius
+        edges.forEach({ edge in
+            
+            switch edge {
+            case .left:
+                layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+                
+            case .right:
+                layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
+                
+            case .top:
+                layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+                
+            case .bottom:
+                layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+                
+            default:
+                break
+            }
+        })
+    }
+    
+    func addShadow(layer: CALayer) {
+        self.layer.cornerRadius = 10.0
+        self.layer.borderWidth = 0.5
+        self.layer.borderColor = UIColor.clear.cgColor
+        self.layer.masksToBounds = true
+        
+        layer.shadowColor = UIColor.lightGray.cgColor
+        layer.shadowOffset = CGSize(width: 0, height: 0.0)
+        layer.shadowRadius = 1.0
+        layer.shadowOpacity = 1.0
+        layer.masksToBounds = false
+        layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: self.layer.cornerRadius).cgPath
+        layer.backgroundColor = UIColor.clear.cgColor
+    }
+
+    
 }
